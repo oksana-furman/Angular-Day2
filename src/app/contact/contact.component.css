@@ -1,1 +1,15 @@
-/* No CSS *//*# sourceMappingURL=contact.component.css.map */
+h2 {
+  margin: 30px;
+  padding: 30px;
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
+
+form input,
+form label {
+  margin: 10px;
+}
+/*# sourceMappingURL=contact.component.css.map */
