@@ -1,1 +1,11 @@
-/* No CSS *//*# sourceMappingURL=footer.component.css.map */
+footer {
+  background-color: #1d3243;
+  margin-bottom: -15px;
+}
+
+footer p {
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+/*# sourceMappingURL=footer.component.css.map */

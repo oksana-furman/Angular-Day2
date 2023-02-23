@@ -3,7 +3,7 @@
         <a class="nav-link" aria-current="page" routerLink="/">Home</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" routerLink="#">Cars</a>
+        <a class="nav-link" routerLink="/cars">Cars</a>
     </li>
     <li class="nav-item">
         <a class="nav-link" routerLink="#">Deals</a>
@@ -19,5 +19,8 @@
     </li>
     <li class="nav-item">
         <a class="nav-link" routerLink="/contact">Contact Us</a>
+    </li>
+    <li class="nav-item">
+        <button class="btn text-light" (click)="donate()">Donate 10 &#8364; <span *ngIf="money!=0">({{ money }} &#8364;)</span></button>
     </li>
 </ul>

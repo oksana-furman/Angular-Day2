@@ -1,0 +1,17 @@
+.headline {
+  margin: 30px;
+  margin-top: 80px;
+  padding: 30px;
+}
+
+.card {
+  margin: 10px;
+  height: 22rem;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card img {
+  height: 50%;
+}
+/*# sourceMappingURL=cars.component.css.map */
