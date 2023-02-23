@@ -6,8 +6,8 @@
         into Vienna and Austria. With no hidden extras or credit card fees, plus a diverse range of car collections to give you plenty of choice, we’ll do everything we can to make your visit to Vienna a memorable one.</p>
     <h2 class="text-center m-3 p-3">Our most popular cars</h2>
     <div class="row row-cols-3">
-        <div *ngFor="let val of newCars">
-            <div class="card" style="width: 18rem;">
+        <div *ngFor="let val of newCars;index as i">
+            <div class="card" style="width: 18rem;" *ngIf="i < 3">
                 <img src="{{ val.image }}" class="card-img-top" alt="{{ val.brand }}">
                 <div class="card-body">
                     <h5 class="card-title">{{ val.brand }} {{ val.model }}</h5>
@@ -18,7 +18,7 @@
         </div>
     </div>
     <div>
-        <!-- <button class="btn btn-danger">See all cars</button> -->
+        <button routerLink="/cars" class="btn btn-danger">See all cars</button>
     </div>
     <div class="text-center">
         <h2>A Quick Guide To Vienna</h2>

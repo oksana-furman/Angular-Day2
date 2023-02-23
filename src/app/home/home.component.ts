@@ -8,6 +8,7 @@ import { cars } from '../cars';
 })
 export class HomeComponent implements OnInit {
 newCars = cars;
+
   constructor() { }
 
   ngOnInit(): void {
