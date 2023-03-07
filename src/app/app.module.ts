@@ -10,6 +10,8 @@ import { ContactComponent } from './contact/contact.component';
 import { HeroComponent } from './hero/hero.component';
 import { CarsComponent } from './cars/cars.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { DetailsComponent } from './details/details.component';
 
 @NgModule({
   declarations: [
@@ -19,12 +21,14 @@ import { ReactiveFormsModule } from '@angular/forms';
     HomeComponent,
     ContactComponent,
     HeroComponent,
-    CarsComponent
+    CarsComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

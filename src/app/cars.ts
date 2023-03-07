@@ -1,4 +1,4 @@
-export let cars : Array<{ brand: string, model: string, insurance: string, pricePerDay: number, fuelType: string, seatNum: number, image: string}> = [{
+export let cars = [{
 brand: "Hyundai",
 model: "I30 SW AT",
 insurance: "A",
@@ -36,7 +36,7 @@ image: "https://hyundai.azureedge.net/media/24569/pdpe_wa_toptrim_dg03-02_ext_3-
                 insurance: "C",
                 pricePerDay: 22,
                 fuelType: "Gasoline",
-                seatNum: 4,
+                seatNum: 4,           
                 image: "https://kong-proxy-aws.toyota-europe.com/c1-images/resize/ccis/680x680/zip/at/configurationtype/visual-for-grade-selector/product-token/86ddecf9-2411-4e46-b791-5cf0f67b0d9e/grade/c837ddb1-151b-4fd4-89be-9b52b311c420/body/7b77d85b-8f26-4645-82ac-22154a7d6293/fallback/true/padding/50,50,50,50/image-quality/70/day-exterior-4_040.png"
                 }, {
                     brand: "Ford",
@@ -79,3 +79,13 @@ image: "https://hyundai.azureedge.net/media/24569/pdpe_wa_toptrim_dg03-02_ext_3-
                                     seatNum: 5,
                                     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCsjgUSlRKlk9YFs0FzAVG4OmATkAqsP1Hgg&usqp=CAU"
                                     }];
+
+                                    export interface Icars {
+                                        brand: string, 
+                                        model: string, 
+                                        insurance: string, 
+                                        pricePerDay: number, 
+                                        fuelType: string, 
+                                        seatNum: number,
+                                        image: string
+                                    }

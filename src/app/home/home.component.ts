@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { cars } from '../cars';
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -8,6 +9,7 @@ import { cars } from '../cars';
 })
 export class HomeComponent implements OnInit {
 newCars = cars;
+
 
   constructor() { }
 

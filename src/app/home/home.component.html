@@ -4,7 +4,7 @@
         fittingly elegant for a city that’s had a central role in world history and culture.<br> <br> Music is especially cherished here, with 15th century choirs and a wonderful orchestra. Vienna was not only the birthplace of Schubert, but was home
         to the likes of Mozart, Beethoven, Mahler and Haydn when they were composing symphonies. That rich musical heritage lives on here.<br> <br> Take advantage of our pick-up locations, including at the airport, so that you can arrive and venture forth
         into Vienna and Austria. With no hidden extras or credit card fees, plus a diverse range of car collections to give you plenty of choice, we’ll do everything we can to make your visit to Vienna a memorable one.</p>
-    <h2 class="text-center m-3 p-3">Our most popular cars</h2>
+    <h2 class="text-center m-3 p-3 mt-5">Our most popular cars</h2>
     <div class="row row-cols-3">
         <div *ngFor="let val of newCars;index as i">
             <div class="card" style="width: 18rem;" *ngIf="i < 3">
@@ -12,12 +12,12 @@
                 <div class="card-body">
                     <h5 class="card-title">{{ val.brand }} {{ val.model }}</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">See more</a>
+                    <button class="btn btn-primary">See more</button>
                 </div>
             </div>
         </div>
     </div>
-    <div>
+    <div class="carsBtn">
         <button routerLink="/cars" class="btn btn-danger">See all cars</button>
     </div>
     <div class="text-center">

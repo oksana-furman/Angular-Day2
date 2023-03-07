@@ -1,0 +1,16 @@
+<div class="container" *ngIf="car">
+    <h2 class="text-center">{{ car.brand }} {{ car.model }}</h2>
+    <div class="d-flex align-items-center">
+        <div class="flex-shrink-0">
+            <img src="{{ car.image }}" alt="{{ car.brand }} {{ car.model }}">
+        </div>
+        <div class="flex-grow-1 ms-3">
+            <!-- <p>Brand: {{ car.brand }}</p>
+            <p>Model: {{ car.model }}</p> -->
+            <p>Type of fuel: {{ car.fuelType }}</p>
+            <p>Number of seats: {{ car.seatNum }}</p>
+            <p>Price per day: {{ car.pricePerDay | currency: 'EUR' }}</p>
+            <p>Insurance: {{ car.insurance }}</p>
+        </div>
+    </div>
+</div>
