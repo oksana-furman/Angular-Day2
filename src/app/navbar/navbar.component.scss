@@ -1,3 +1,10 @@
-.nav-link {
-    color: white;
+#nav {
+    position: fixed;
+    .nav {
+        // display: flex;
+        // justify-content: center;
+        .nav-link {
+            color: white;
+        }
+    }
 }

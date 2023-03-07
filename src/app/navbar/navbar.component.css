@@ -1,3 +1,6 @@
-.nav-link {
+#nav {
+  position: fixed;
+}
+#nav .nav .nav-link {
   color: white;
 }/*# sourceMappingURL=navbar.component.css.map */

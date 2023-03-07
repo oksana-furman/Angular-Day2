@@ -1,37 +1,56 @@
-.container {
+.box {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 27rem;
+  background-image: url("../../assets/img/vienna-night-view.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  margin: 20px;
+  justify-content: center;
 }
-.container .item {
-  display: flex;
-  justify-content: space-between;
-  margin: 5px;
-  padding: 5px;
+.box .item .row {
+  margin-left: 1rem;
+  margin: 0.4rem;
+  padding: 0.4rem;
 }
-.container .item input {
-  margin: 5px;
-  height: 60px;
-  border-radius: 5px;
-  padding: 5px;
+.box .item .row input {
+  margin: 0.4rem;
+  height: 4rem;
+  border-radius: 0.4rem;
+  padding: 0.4rem;
   background-color: whitesmoke;
 }
-.container .item #p-loc,
-.container .item #d-loc {
-  width: 350px;
+.box .item .row #p-loc,
+.box .item .row #d-loc {
+  width: 22rem;
 }
-.container .item #p-date,
-.container .item #p-time,
-.container .item #d-date,
-.container .item #d-time {
-  width: 170px;
+.box .item .row #p-date,
+.box .item .row #p-time,
+.box .item .row #d-date,
+.box .item .row #d-time {
+  width: 10.6rem;
 }
-.container .item .btn {
+.box #item3 {
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box #item3 .btn {
   height: -moz-fit-content;
   height: fit-content;
   width: 75px;
   border: 1px solid white;
   color: white;
   background-color: rgb(23, 48, 92);
+}
+
+@media screen and (max-width: 769px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=hero.component.css.map */
