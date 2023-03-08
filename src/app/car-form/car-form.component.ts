@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormGroup, FormControl} from '@angular/forms';
+import {FormGroup, FormControl, NgForm} from '@angular/forms';
 import Swal from 'sweetalert2';
 import { cars, Icars } from '../cars';
 
@@ -9,8 +9,8 @@ import { cars, Icars } from '../cars';
   styleUrls: ['./car-form.component.scss']
 })
 export class CarFormComponent implements OnInit {
-  cars: Array<Icars> = cars;
-  
+  cars: Icars[] = [];
+  car = {} as Icars;
   
   constructor() { }
 
@@ -26,11 +26,11 @@ export class CarFormComponent implements OnInit {
 
   })
 
-  returnCarForm(car: Icars){
-    this.cars.push(car);
+  // returnCarForm(car: FormGroup){
+  //   this.cars.push(car.value);
 
-    console.log(this.cars)
-  }
+  //   console.log(this.cars)
+  // }
 
   printForm(){
     console.table(this.carForm.value);
