@@ -1,9 +1,9 @@
 footer {
   background-color: rgb(29, 50, 67);
-  margin-bottom: -15px;
+  margin-bottom: -1rem;
 }
 footer p {
   text-align: center;
   color: white;
-  padding: 10px;
+  padding: 0.8rem;
 }/*# sourceMappingURL=footer.component.css.map */

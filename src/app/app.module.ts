@@ -12,6 +12,7 @@ import { CarsComponent } from './cars/cars.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DetailsComponent } from './details/details.component';
+import { CarFormComponent } from './car-form/car-form.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { DetailsComponent } from './details/details.component';
     ContactComponent,
     HeroComponent,
     CarsComponent,
-    DetailsComponent
+    DetailsComponent,
+    CarFormComponent
   ],
   imports: [
     BrowserModule,

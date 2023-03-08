@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CarFormComponent } from './car-form/car-form.component';
 import { CarsComponent } from './cars/cars.component';
 import { ContactComponent } from './contact/contact.component';
 import { DetailsComponent } from './details/details.component';
@@ -13,6 +14,8 @@ const routes: Routes = [{
   path:"cars", component: CarsComponent
 }, {
   path:"cars/:id", component: DetailsComponent
+}, {
+  path: "car-form", component: CarFormComponent
 }];
 
 @NgModule({

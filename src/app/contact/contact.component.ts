@@ -9,12 +9,15 @@ import Swal from 'sweetalert2';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
+ 
   constructor() { }
 
   ngOnInit(): void {
   }
 
   firstForm = new FormGroup({
+    fName: new FormControl(''), 
+    lName: new FormControl(''), 
     email: new FormControl(''), 
     message: new FormControl('') 
   })
@@ -33,8 +36,25 @@ export class ContactComponent implements OnInit {
     console.table(this.secondForm.value);
   }
   
+  returnFirstForm(){
+    Swal.fire({
+      title: '<strong>Thank you for reaching out!</strong>',
+      icon: 'info',
+      html:
+      `We will contact you soon!`,
+      showCloseButton: true,
+      showCancelButton: true,
+      focusConfirm: false,
+      confirmButtonText:
+        'Confirm',
+      confirmButtonAriaLabel: 'Thumbs up, great!',
+      cancelButtonText:
+        'Delete',
+      cancelButtonAriaLabel: 'Thumbs down'
+    })
+  }
   
-  returnForm(){
+  returnSecondForm(){
     Swal.fire({
       title: '<strong>Registration is complete</strong>',
       icon: 'info',
@@ -52,6 +72,6 @@ export class ContactComponent implements OnInit {
         'Delete',
       cancelButtonAriaLabel: 'Thumbs down'
     })
-   
   }
+
 }

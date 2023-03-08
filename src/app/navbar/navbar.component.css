@@ -1,6 +1,10 @@
 #nav {
-  position: fixed;
+  position: absolute;
 }
 #nav .nav .nav-link {
   color: white;
+}
+#nav .nav .nav-link:hover {
+  background-color: rgba(234, 226, 226, 0.4);
+  border-radius: 2px;
 }/*# sourceMappingURL=navbar.component.css.map */

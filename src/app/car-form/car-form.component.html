@@ -1,0 +1,54 @@
+<div class="container">
+    <div class="formDiv">
+        <h2>New car form for employees</h2>
+        <form [formGroup]="carForm" (ngSubmit)="printForm()">
+            <div>
+                <label>
+            Car Brand
+            <input type="text" formControlName="brand" id="brand">
+        </label>
+
+            </div>
+            <div>
+                <label>
+            Car Model 
+            <input type="text" formControlName="model" id="model">
+        </label>
+            </div>
+            <div>
+                <label>
+            Car Insurance 
+            <input type="text" formControlName="insurance" id="insurance">
+        </label>
+            </div>
+            <div>
+                <label>
+            Price Per Day 
+            <input type="number" formControlName="pricePerDay" id="pricePerDay"></label>
+            </div>
+            <div>
+                <label>
+            Type of Fuel 
+            <input type="text" formControlName="fuelType" id="fuelType">
+        </label>
+            </div>
+
+            <div>
+                <label>
+            Number of Seats 
+            <input type="number" formControlName="seatNum" id="seatNum">
+        </label>
+            </div>
+            <div>
+                <!-- only links, not images! -->
+                <label>
+            Car's Photo 
+            <input type="url" formControlName="image" id="image">
+        </label>
+            </div>
+            <div class="btnDiv">
+                <input type="submit" value="Submit" class="btn btn-success" id="secondBtn">
+            </div>
+        </form>
+    </div>
+</div>

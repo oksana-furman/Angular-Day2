@@ -16,13 +16,16 @@
             <a class="nav-link" routerLink="#">Locations</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" routerLink="#">VIP</a>
+            <a class="nav-link" id="vip" routerLink="#" [style.color]="money >= 200 ? 'white' : 'grey' ">VIP</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" routerLink="/contact">Contact Us</a>
         </li>
         <li class="nav-item">
-            <button class="btn text-light" (click)="donate()">Donate 10 &#8364; <span *ngIf="money!=0">({{ money }} &#8364;)</span></button>
+            <a class="nav-link" routerLink="/car-form">For Employees</a>
+        </li>
+        <li class="nav-item">
+            <a routerLink="#" class="nav-link" (click)="donate()">Donate 10 &#8364; <span *ngIf="money!=0">({{ money }} &#8364;)</span></a>
         </li>
     </ul>
 </div>
