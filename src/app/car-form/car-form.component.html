@@ -1,53 +1,72 @@
 <div class="container">
-    <div class="formDiv">
+    <div class="box">
+        <h1 class="headline text-center">Our Cars</h1>
+        <div class="row row-cols-3">
+            <div *ngFor="let val of newCars, index as id">
+                <div class="card" style="width: 18rem;">
+                    <img src="{{ val.image }}" class="card-img-top" alt="{{ val.brand }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ val.brand }} {{ val.model }}</h5>
+                        <p class="card-text">Price per day: {{ val.pricePerDay | currency: 'EUR' }} </p>
+                        <p class="card-text">Insurance: {{ val.insurance }} </p>
+                        <p class="card-text">Number of seats: {{ val.seatNum }} </p>
+                        <p class="card-text">Type of fuel: {{ val.fuelType }} </p>
+                        <!-- <a href="/cars/{{id}}" class="btn btn-primary">See more</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="formDiv" id="formDiv">
         <h2>New car form for employees</h2>
-        <form [formGroup]="carForm" (ngSubmit)="printForm()">
+        <form [formGroup]="carForm" (ngSubmit)="addCar()">
             <div>
-                <label>
+                <label class="label">
             Car Brand
             <input type="text" formControlName="brand" id="brand">
         </label>
-
             </div>
             <div>
-                <label>
+                <label class="label">
             Car Model 
             <input type="text" formControlName="model" id="model">
         </label>
             </div>
             <div>
-                <label>
+                <label class="label">
             Car Insurance 
             <input type="text" formControlName="insurance" id="insurance">
         </label>
             </div>
             <div>
-                <label>
+                <label class="label">
             Price Per Day 
             <input type="number" formControlName="pricePerDay" id="pricePerDay"></label>
             </div>
             <div>
-                <label>
+                <label class="label">
             Type of Fuel 
             <input type="text" formControlName="fuelType" id="fuelType">
         </label>
             </div>
 
             <div>
-                <label>
+                <label class="label">
             Number of Seats 
             <input type="number" formControlName="seatNum" id="seatNum">
         </label>
             </div>
             <div>
-                <!-- only links, not images! -->
-                <label>
+                <!-- image link -->
+                <label class="label">
             Car's Photo 
             <input type="url" formControlName="image" id="image">
         </label>
             </div>
+            <div id="error"></div>
             <div class="btnDiv">
-                <input type="submit" value="Submit" class="btn btn-success" id="secondBtn" (click)="returnCarForm(car)">
+                <input type="submit" value="Submit" class="btn btn-success" id="secondBtn">
             </div>
         </form>
     </div>
